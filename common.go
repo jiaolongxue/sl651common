@@ -1,4 +1,4 @@
-package common
+package sl651common
 
 
 type OpCode int
