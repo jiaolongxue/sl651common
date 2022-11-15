@@ -64,6 +64,18 @@ type H34Entry struct {
 }
 
 
+type H36Entry struct {
+	MsgId		string	//流水，多个34Entry可能对应一个原始消息
+	Region		string	//区域信息，该信息由接收程序启动时配置，无需从消息中解析
+	GatewayId	string	//网关id（可以用监测站的id）
+	GatewayType 	string	//遥测站类型
+	ReportTimestamp	uint64	// 上报时间
+	EventTimestamp	uint64	//观测时间
+	ProcessTimestamp	uint64	// 处理时间，由框架生成
+	Content		string	//其他属性，例如tag，json格式，也可以存放原始消息的json
+}
+
+
 type MsgBuffer interface {
 
 	// VirtualLength 虚拟长度，虚读后剩余可读数据长度
