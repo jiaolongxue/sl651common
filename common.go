@@ -22,6 +22,8 @@ const (
 	Op51		=	0x51
         OpE1		=       0xe1
         OpE8		=       0xe8
+        OpE9            =       0xe9
+        OpEB		=       0xeb
 	OpUnknown	=	0x00
 )
 
