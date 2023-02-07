@@ -21,6 +21,7 @@ const (
 	Op4A		=	0x4A
 	Op51		=	0x51
         OpE1		=       0xe1
+	OpE5		=	0xe5
         OpE8		=       0xe8
         OpE9            =       0xe9
         OpEB		=       0xeb
